@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Analizador de Imagem</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <head>
+        <title>Analize</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="script/script.js"></script>
+    </head>
+
+    <body>
+
+        <h1 id="titulo">Analisar imagem:</h1>
+        <h2 id="subtitulo">Coloque a URL da Imagem: <strong>Analizar Imagem</strong></h2>
+
+        <input type="hidden" name="subscriptionKey" id="subscriptionKey" value="55b825e97a254ee7b72297b4fed5fcb6" />
+        <input type="hidden" name="endpointUrl" id="endpointUrl"
+               value="https://iabrendosantiago.cognitiveservices.azure.com/" />
+
+        <strong id="urlimagem">Analize sua imagem: URL</strong>
+
+        <input type="text" name="inputImage" id="inputImage"
+               value="https://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg" />
+        <button id="botao" onclick="processImage(),tags(),categorias()">Analizar Imagem</button>
+
+        <div id="wrapper" style="width:1020px; display:table;">
+            <div id="jsonOutput" style="width:600px; display:table-cell;">
+                <strong id="saida">Saída:</strong>
+                <br><br>
+                <textarea id="responseTextArea" class="UIInput" style="width:400px; height:300px;"></textarea>
+            </div>
+            <div id="imageDiv" style="width:420px; display:table-cell;">
+                <strong>Imagem Selecionada:</strong>
+                <br><br>
+                <img id="sourceImage" width="400" />
+            </div>
+        </div>
+        <script src="script/funct.js"></script>
+        <script src="script/script.js"></script>
+    </body>
+</body>
+
+</html>

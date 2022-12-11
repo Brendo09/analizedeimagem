@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(177, 172, 167);
+}
+
+.input-hidden {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 50px;
+    padding: 20px;
+}
+
+#subtitulo {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+#urlimagem {
+    padding: 15px;
+}
+
+#inputImage {
+    padding: 5px;
+}
+
+#botao {
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#wrapper {
+    padding: 50px;
+}
